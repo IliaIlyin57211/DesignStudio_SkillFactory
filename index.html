@@ -154,16 +154,20 @@
                 <div class="whiteblock__formblock screensizeprop4">
 
                     <div class="whiteblock__formblock-namecoll order1">
-                        <p class="whiteblock__formblock-namecoll-text screensizeprop5">Name</p>
+<!--                        <p class="whiteblock__formblock-namecoll-text screensizeprop5">Name</p>  -->
                         <form class="whiteblock__formblock-name">
-                            <input class="whiteblock__formblock-formclass screensizeprop5" type="text" placeholder="What is your name:">
+                            <label for="Name" class="whiteblock__formblock-namecoll-text screensizeprop5">Name</label>
+                            <br>
+                            <input class="whiteblock__formblock-formclass screensizeprop5" id="Name" type="text" placeholder="What is your name:">
                         </form>                    
                     </div>
 
                     <div class="whiteblock__formblock-namecoll order2">
-                        <p class="whiteblock__formblock-namecoll-text screensizeprop5">Phone</p>
+<!--                        <p class="whiteblock__formblock-namecoll-text screensizeprop5">Phone</p>  -->
                         <form class="whiteblock__formblock-name">
-                            <input class="whiteblock__formblock-formclass screensizeprop5" type="text" placeholder="Your phone number:">
+                            <label for="phone" class="whiteblock__formblock-namecoll-text screensizeprop5">Phone</label>
+                            <br>
+                            <input class="whiteblock__formblock-formclass screensizeprop5" id="phone" type="text" placeholder="Your phone number:">
                         </form>                    
                     </div>
 
@@ -250,8 +254,13 @@
                 </div>
 
             </div>  <!-- конец блока с 3-мя картинками  -->
+        </div>    <!-- конец блока контейнер -->
+    </section>
+    <section class="whiteblockmore whiteblockmore_backgrimghouse">    
+        <div class="container">
             <div class="whiteblock__whitehouseblackforms nodisplaysmall">
-                <div class="whiteblock__whitehouseimg">
+<!--                <div class="whiteblock__whitehouseimg"> -->
+                <div class="whiteblock__4circletextblock-outer">
                     <div class="whiteblock__4circletextblock">
 
                         <div class="whiteblock__circletext">
@@ -285,47 +294,67 @@
                         </div>                      
                         
                     </div>    
-                </div>  <!-- конец блока с белой картинкой с домом  -->
+                </div>    
+<!--                </div>   конец блока с белой картинкой с домом  --> 
+                <div class="whiteblock__blackforms-outer">        
+                    <div class="whiteblock__blackforms">
+                        <p class="whiteblock__blackforms-heading">
+                            Leave a request for free departure of the measurer
+                        </p>
+                        <form class="whiteblock__blackforms-form mtop39">
+                            <label for="Name" class="whiteblock__blackforms-formtitle">Name</label>
+                            <br>
+                            <input class="whiteblock__blackforms-formtext" id="Name" type="text" placeholder="What is your name:">
+                        </form>
 
-                <div class="whiteblock__blackforms">
-                    <p class="whiteblock__blackforms-heading">
-                        Leave a request for free departure of the measurer
-                    </p>
+                        <form class="whiteblock__blackforms-form mtop48">
+                            <label for="Phone" class="whiteblock__blackforms-formtitle">Phone</label>
+                            <br>
+                            <input class="whiteblock__blackforms-formtext" id="Phone" type="text" placeholder="Your phone number:">
+                        </form>                    
 
-                    <p class="whiteblock__blackforms-formtitle mtop39">Name</p>
-                    <form class="whiteblock__blackforms-form">
-                        <input class="whiteblock__blackforms-formtext" type="text" placeholder="What is your name:">
-                    </form>
+                        <form class="whiteblock__blackforms-form mtop51">
+                            <label for="email" class="whiteblock__blackforms-formtitle">Email</label>
+                            <br>
+                            <input class="whiteblock__blackforms-formtext" id="email" type="text" placeholder="Your email">
+                        </form> 
 
-                    <p class="whiteblock__blackforms-formtitle mtop48">Phone</p>
-                    <form class="whiteblock__blackforms-form">
-                        <input class="whiteblock__blackforms-formtext" type="text" placeholder="Your phone number:">
-                    </form>                    
+                        <form class="whiteblock__blackforms-check mtop18">
+                            <input id="black" type="checkbox">
+                            <label class="whiteblock__blackforms-formtext" for="black">I agree to the processing of personal data</label>
+                        </form>
 
-                    <p class="whiteblock__blackforms-formtitle mtop51">Email</p>
-                    <form class="whiteblock__blackforms-form">
-                        <input class="whiteblock__blackforms-formtext" type="text" placeholder="Your email">
-                    </form> 
+                        <button class="button3 marg39_49">Call the measurer</button>
+                    </div>  <!-- конец черного блока с формами  -->
 
-                    <form class="whiteblock__blackforms-form mtop18">
-                        <input id="black" type="checkbox">
-                        <label class="whiteblock__blackforms-formtext" for="black">I agree to the processing of personal data</label>
-                    </form>
-
-                    <button class="button3 marg39_49">Call the measurer</button>
-                </div>  <!-- конец черного блока с формами  -->
+                    <div class="whiteblock__piggybank nodisplaysmall">
+                        <img src="./Img/piggybank.svg" alt="Свинья-копилка" width="72px" height="72px">
+                        <P class="whiteblock__piggybank-text">Help save 10 - 20% of the cost of materials</P>
+                    </div>                    
+                </div>
             </div>    <!-- конец блока 'белый дом + чёрный прямлугольник с формами'  -->
 
+            <!--
             <div class="whiteblock__piggybank nodisplaysmall">
                 <img src="./Img/piggybank.svg" alt="Свинья-копилка" width="72px" height="72px">
                 <P class="whiteblock__piggybank-text">Help save 10 - 20% of the cost of materials</P>
 
             </div>
+            -->
 
         </div> <!-- конец большого блока container  -->
 
     </section> <!-- конец секции whiteblock  -->
 
+    <!--
+    <div class="piggybank__outer nodisplaysmall">
+        <div class="whiteblock__piggybank nodisplaysmall">
+            <img src="./Img/piggybank.svg" alt="Свинья-копилка" width="72px" height="72px">
+            <P class="whiteblock__piggybank-text">Help save 10 - 20% of the cost of materials</P>
+        </div>
+    </div>
+    -->
+    
     <section class="blackblock2 nodisplaysmall">
         <div class="container blackblock2__container">
             <div class="blackblock2-overlay"></div>    
@@ -365,7 +394,17 @@
                 <div class="blackblock2__img4">
                     <img src="./Img/Sofa_and_glass_table.png" alt="Стеклянный столик и цветы" width="354px" height="624.885px">
                 </div>                            
-            </div>                
+            </div>      
+            
+            
+<!--            <div class="piggybank__outer">
+                <div class="whiteblock__piggybank">
+                    <img src="./Img/piggybank.svg" alt="Свинья-копилка" width="72px" height="72px">
+                    <P class="whiteblock__piggybank-text">Help save 10 - 20% of the cost of materials</P>
+                </div>
+            </div>
+ -->           
+
         </div>
 
     </section>   <!-- конец секции blackblock2  -->
@@ -441,9 +480,12 @@
         </div>
     </section> <!-- конец секции whiteblock2  -->
 
-    <section class="blackblock3 nodisplaysmall">
-        <div class="container blackblock3__container">
-            <div class="blackblock2-overlay"></div>   
+<!--    <section class="blackblock3 nodisplaysmall">        -->
+<!--        <div class="container blackblock3__container">  -->
+    <section class="blackblock3 nodisplaysmall blackblock3__container">
+    <div class="blackblock2-overlay"></div>    
+        <div class="container">    
+<!--            <div class="blackblock2-overlay"></div>    -->
             <div class="blackblock3__blackforms">
                 <h2 class="blackblock3__blackforms-heading">have any questions?</h2>
                 <div class="blackblock3__blackforms-formcontainer">
@@ -508,19 +550,25 @@
             </div>
             <p class="blackblock4__formtitle">have any questions?</p>
 
-            <p class="whiteblock__blackforms-formtitle mtop52 screensizeprop11">Name</p>
+<!--            <p class="whiteblock__blackforms-formtitle mtop52 screensizeprop11">Name</p>  -->
             <form class="whiteblock__blackforms-form">
-                <input class="whiteblock__blackforms-formtext" type="text" placeholder="What is your name:">
+                <label for="Name" class="whiteblock__blackforms-formtitle mtop52 screensizeprop11">Name</label>
+                <br>
+                <input class="whiteblock__blackforms-formtext" id="Name" type="text" placeholder="What is your name:">
             </form>
     
-            <p class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Phone</p>
+<!--            <p class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Phone</p>   -->
             <form class="whiteblock__blackforms-form">
-                <input class="whiteblock__blackforms-formtext" type="text" placeholder="Your phone number:">
+                <label for="Phone" class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Name</label>
+                <br>
+                <input class="whiteblock__blackforms-formtext" id="Phone" type="text" placeholder="Your phone number:">
             </form>                    
     
-            <p class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Email</p>
+<!--            <p class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Email</p>    -->
             <form class="whiteblock__blackforms-form">
-                <input class="whiteblock__blackforms-formtext" type="text" placeholder="Your email">
+                <label for="email" class="whiteblock__blackforms-formtitle mtop63 screensizeprop11">Email</label>
+                <br>
+                <input class="whiteblock__blackforms-formtext" id="email" type="text" placeholder="Your email">
             </form> 
 
             <form class="blackblock3__blackforms-checkbox screensizeprop12">
