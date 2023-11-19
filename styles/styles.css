@@ -306,6 +306,7 @@ header{
 
 .whiteblockmore{
     background-color: white;
+    position: relative;
 /*    height: 2576px;*/
 }
 
@@ -315,6 +316,12 @@ header{
   position: relative;
   background-image: url('../img/white_image_house.png');
   background-size: cover;
+}
+
+.whiteblockmore_imghouse{
+    width: 703px;
+    height: 645px;
+    position: absolute
 }
 
 .whiteblock__figureout-overlay{
@@ -635,6 +642,10 @@ header{
 .whiteblock__4circletextblock-outer{
     display: flex;
     flex-direction: column;
+    width: 450px;
+/*    padding-left: 75px;
+    padding-top: 117.4px;*/
+
 }
 
 .emptybox{
@@ -683,7 +694,7 @@ header{
 }
 
 .whiteblock__blackforms-formtitle{
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);   /* 0.5!!!*/
     font-family: Nunito Sans;
     font-size: 13px;
     font-style: normal;
@@ -1032,7 +1043,7 @@ header{
 }
 
 .formlabel{
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);    /* 0.5!!!*/
     font-family: Nunito Sans;
     font-size: 13px;
     font-style: normal;
@@ -1212,7 +1223,12 @@ footer{
 .arrow_right{width: 36px; height: 36px; position: absolute; z-index: 2; top:42.5%; right: 4%;}
 .arrow_left{width: 36px; height: 36px; position: absolute; z-index: 2; top:42.5%; left: 4%; transform: rotate(180deg);}
 
-input::placeholder {color: #FFF;}
+input::placeholder {color: #FFF; opacity: 1;}
+input::-moz-placeholder {color: #FFF;}
+input::-webkit-input-placeholder {color:white; opacity: 1;}
+input::-moz-placeholder          {color:white; opacity: 1;}/* Firefox 19+ */
+input:-moz-placeholder           {color:white; opacity: 1;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:white; opacity: 1;}
 
 
 /*#################################################################################################  
