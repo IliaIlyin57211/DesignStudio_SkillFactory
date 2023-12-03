@@ -764,15 +764,15 @@ header{
 
 .blackblock2{
     height: 864px;
- /*   background-image: url('../img/Room_carpet_lux.png');
-    background-size: cover;*/
+    background-image: url('../img/Room_carpet_lux.png');
+    background-size: cover;
     position: relative;
     margin-top: 242.09px;    
 }
 
 .blackblock2__container{
-    background-image: url('../img/Room_carpet_lux.png');
-    background-size: cover;
+/*    background-image: url('../img/Room_carpet_lux.png');
+    background-size: cover;  */
     position: relative;
     z-index: 1;
     height: 864px;
@@ -878,7 +878,7 @@ header{
 }
 
 .whiteblock2{
-   /* height: 1107.11px;*/
+    height: 1107.11px;
     position: relative;
 }
 
@@ -974,17 +974,29 @@ header{
     height: 54px;
  }
 
+ /*
 .whiteblock2__backgroundhouses{
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: center;
-/*    margin-top: -50px;
-    margin-left: -80px;   */
     margin: -50px auto 0 auto;
     opacity: 0.05;    
     z-index: -1;
+}*/
+
+.whiteblock2__backgroundhouses{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    opacity: 0.05;    
+    z-index: -1;
+    top:659px;
+    width: 100%;
 }
+
 
 .blackblock3__container{
     background-image: url('../img/black3.png');
